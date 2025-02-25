@@ -1,159 +1,26 @@
-.activities-page {
-    padding: 100px 2rem 2rem;
-}
-
-/* Announcements Section */
-.announcement-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.activity-list {
     display: flex;
-    margin-bottom: 1.5rem;
-    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.announcement-date {
-    background: #3498db;
-    color: white;
-    padding: 1rem;
+.activity {
+    width: 330px; /* Adjusted width */
+    margin: 22px;
+    padding: 22px;
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Adjusted border-radius */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+}
+
+.head {
+    padding: 24px;
     text-align: center;
-    min-width: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.announcement-date .day {
-    font-size: 1.5rem;
-    font-weight: bold;
+.activity-grid {
+    margin: 48px;
 }
-
-.announcement-date .month {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-}
-
-.announcement-content {
-    padding: 1.5rem;
-    flex: 1;
-}
-
-.announcement-content h3 {
-    margin-bottom: 0.5rem;
-    color: #2c3e50;
-}
-
-/* Events Timeline */
-.events-timeline {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.event-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    position: relative;
-}
-
-.event-date {
-    color: #3498db;
-    margin-bottom: 0.5rem;
-}
-
-.event-date i {
-    margin-right: 0.5rem;
-}
-
-.event-details {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 1rem;
-    color: #7f8c8d;
-}
-
-.event-details i {
-    margin-right: 0.5rem;
-}
-
-/* Featured Lessons */
-.lessons-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.lesson-card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.lesson-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.lesson-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.lesson-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.lesson-card:hover .lesson-overlay {
-    opacity: 1;
-}
-
-.lesson-card:hover .lesson-image img {
-    transform: scale(1.1);
-}
-
-.view-lesson-btn {
-    background: #3498db;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.view-lesson-btn:hover {
-    background: #2980b9;
-}
-
-.lesson-content {
-    padding: 1.5rem;
-}
-
-.lesson-meta {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-    color: #7f8c8d;
-    font-size: 0.9rem;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .announcement-card {

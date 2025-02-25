@@ -171,6 +171,10 @@
     right: 1rem;
 }
 
+h3 {
+    color: white;
+    font-weight: bold;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .gallery-grid {
